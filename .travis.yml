@@ -66,6 +66,7 @@ jobs:
           conda install -c pyviz/label/dev -c conda-forge matplotlib=3.2.1 matplotlib-base=3.2.1 spatialpandas --no-deps;
           fi
         # Install rasterio using pip to avoid conda solver errors
+        - conda install -c conda-forge notebook=6.0.3
         - pip install rasterio
         - doit env_capture
       script:
