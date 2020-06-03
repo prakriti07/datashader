@@ -110,7 +110,7 @@ jobs:
         - conda install -c anaconda nbsmoke flake8 pytest xarray
         - conda install -c conda-forge dask datashape scipy pytest-benchmark
         #- conda install -c programfan scikit-image
-        #- conda install -c numba llvmlite=0.31.0
+        - conda install -c numba llvmlite=0.31.0
         #- python3.7 -m pip install fastparquet
         #- conda install datashader
         #- conda install -c numba -c pyviz datashader
