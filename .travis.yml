@@ -126,7 +126,7 @@ jobs:
         #- export LLVM_CONFIG="/usr/bin/llvm-config-8"
         #- python3.7 -m pip install fastparquet
         - python3.7 setup.py install
-        - cp /home/travis/miniconda/envs/test-environment/lib/python3.7/site-packages/llvmlite/binding/libllvmlite.so /home/travis/miniconda/envs/test-environment/lib/python3.7/site-packages/llvmlite-0.31.0-py3.7.egg/llvmlite/binding/
+        - cp /home/travis/miniconda/envs/test-environment/lib/python3.7/site-packages/llvmlite/binding/libllvmlite.so  ../../../miniconda/envs/test-environment/lib/python3.7/site-packages/llvmlite-0.31.0-py3.7.egg/llvmlite/binding/
         - python3.7 -m pip install rasterio==1.1.4
         #- travis_wait mvn install
         - doit env_capture
