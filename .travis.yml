@@ -108,7 +108,7 @@ jobs:
         - python3.7 -m pip install pyctdev
         - conda install -c anaconda nbsmoke flake8 pytest xarray
         - conda install -c conda-forge dask datashape scipy pytest-benchmark
-        - conda install -c programfan scikit-image
+        #- conda install -c programfan scikit-image
         - conda install -c numba llvmlite
         #- python3.7 -m pip install fastparquet
         - python3.7 setup.py install
